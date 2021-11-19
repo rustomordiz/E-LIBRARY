@@ -15,13 +15,13 @@
 
 <body>
     <div class="login-clean" style="background-color: #f8c25e;margin: 0px;padding: 63px;">
-        <form method="post" style="padding: 50px;opacity: 1;">
+        <form method="POST" style="padding: 50px;opacity: 1;">
             <div class="illustration"><img src="assets/img/cpe%20logo.png">
                 <h1 style="font-size: 33px;color: rgb(246,136,6);">E-LIBRARY</h1>
             </div>
-            <div class="form-group"><input class="form-control" type="text" placeholder="Username"></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(246,136,6);">Log In</button></div><a class="forgot" href="#">Forgot your username or password?</a></form>
+            <div class="form-group"><input class="form-control" type="text" name="username" placeholder="Username" required></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required></div>
+            <div class="form-group"><input class="btn btn-primary btn-block" type="submit" name="login" value="Login" style="background-color: rgb(246,136,6);"></div><a class="forgot" href="#">Forgot your username or password?</a></form>
     </div>
     <div class="footer-basic" style="background-color: rgb(10,8,5);height: 183px;">
         <footer>
@@ -45,8 +45,82 @@
 
 
                     <!-------------------DATABASE OPERATION---------------------->
+      
+    <?php
 
-<?php
-        $con= mysqli_connect('localhost','root','','studynihongo_nihongo');
-        if (mysqli_connect_errno())
-?>
+    error_reporting(0);
+
+    if($_POST['login'])
+    {
+        $conn= mysqli_connect('localhost','root','','elibrary');
+          
+        // Check connection
+        if($conn === false){
+            die("ERROR: Could not connect. " 
+                . mysqli_connect_error());
+        }
+          
+        $username = $_REQUEST['username'];
+        $password = $_REQUEST['password'];
+
+        if(substr($username,0,5)=='admin'){
+
+            // ADMIN LOGIN 
+           $sql = mysqli_query($conn,"select * from admin where username like binary '$username' and password like binary'$password'");
+           $results = mysqli_fetch_object($sql);
+		   $id = $results->id;
+		   $username = $results->username;
+		   $password = $results->password;
+           $first_name = $results->first_name;
+           $last_name = $results->last_name;
+
+           if($id != ""){
+
+                session_start();
+                $login = true;
+                $_SESSION['logged_in'] = $login;
+                $_SESSION['user_id'] = $id;
+                $_SESSION['user_name'] = $username;
+                $_SESSION['fname'] = $first_name;
+                $_SESSION['lname'] = $last_name;
+
+               echo '<script> location.replace("../Home and Profile/home.php"); </script>';
+           }else{
+               echo '<script> alert("Invalid Username or Password"); </script>';
+           }  
+
+        }else{  
+
+           // STUDENT LOGIN 
+           $sql = mysqli_query($conn,"select * from students where student_id like binary '$username' and password like binary'$password'");
+           $results = mysqli_fetch_object($sql);
+		   $id = $results->id;
+		   $username = $results->student_id;
+		   $password = $results->password;
+           $first_name = $results->first_name;
+           $last_name = $results->last_name;
+
+           if($id != ""){
+
+                session_start();
+                $login = true;
+                $_SESSION['logged_in'] = $login;
+                $_SESSION['user_id'] = $id;
+                $_SESSION['user_name'] = $username;
+                $_SESSION['fname'] = $first_name;
+                $_SESSION['lname'] = $last_name;
+
+               echo '<script> location.replace("../Home and Profile/profile.php");  </script>';
+           }else{
+               echo '<script> alert("Invalid Username or Password"); </script>';
+           }
+        }
+         // Close connection
+         mysqli_close($conn);
+    }
+       
+    ?>
+<!--
+    
+
+ 
