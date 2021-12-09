@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Add-Another-Button.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Tabs-with-Arrows.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-DataTables.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Image-Uploader.css">
+    <link rel="stylesheet" href="assets/css/Contact-form-simple.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-with-Search-Sort-Filter-and-Zoom-using-TableSorter.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/Minimal-tabs-1.css">
+    <link rel="stylesheet" href="assets/css/Minimal-tabs.css">
+    <link rel="stylesheet" href="assets/css/MUSA_button-label-1.css">
+    <link rel="stylesheet" href="assets/css/MUSA_button-label.css">
+    <link rel="stylesheet" href="assets/css/MUSA_panel-table-1.css">
+    <link rel="stylesheet" href="assets/css/MUSA_panel-table.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
+    <link rel="stylesheet" href="assets/css/Right-Sidebar.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+    <link rel="stylesheet" href="assets/css/tabs-Menu.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch-1-1.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch-1.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switches.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark navbar-expand float-right align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background-image: url(&quot;none&quot;);background-color: rgb(239,210,106);">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"><span style="color: rgb(22,168,231);">E-LIBRARY</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link border-white active" href="browse.html"><i class="fas fa-home" style="color: rgb(37,20,20);"></i><span style="color: rgb(28,10,10);">Home</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border-white" href="profile.html"><i class="fas fa-user" style="color: rgb(28,10,10);"></i><span style="color: rgb(13,1,1);">Profile</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link border-white active" href="browse.html" style="color: rgb(13,0,3);"><i class="fas fa-table" style="color: rgb(13,1,1);"></i><span>Browse</span></a><a class="nav-link border-white" href="contacts.html" style="color: rgb(13,0,3);"><i class="fab fa-slack-hash" style="color: rgb(13,1,1);"></i><span>Contact</span></a>
+                        <a
+                            class="nav-link border-white" href="mvg.html" style="color: rgb(13,0,3);"><i class="far fa-list-alt" style="color: rgb(13,1,1);"></i><span>Mission, Vision, Goals</span></a>
+                    </li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button" style="background-color: rgb(78,115,223);"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content" style="background-color: #fdfcf9;filter: blur(0px);">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" style="background-image: url(&quot;assets/img/orange.png&quot;);margin: 0px;">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><img style="width: 73px;height: 67px;margin: 22px;" src="assets/img/coe%20logo.png">
+                        <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                <div class="input-group-append"><button class="btn btn-primary py-0" type="button" style="width: 38px;height: 35px;"><i class="fas fa-search"></i></button></div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation"></li>
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow" role="presentation">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="font-family: Nunito, sans-serif;">Username</span><img class="border rounded-circle img-profile" src="assets/img/coe%20logo.png"></a>
+                                    <div
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="text-left d-sm-flex justify-content-between align-items-center mb-4" style="width: 962px;">
+                    <h3 class="text-dark mb-0" style="margin: 21px;">Browse Page</h3>
+                </div>
+                <div class="border rounded-0 right-sidebar-normal" id="right-sidebar" style="height: 373px;width: 173px;margin-left: 100px;background-color: #fefefe;margin-top: 30px;">
+                    <h3 class="text-dark mb-0" style="margin: 21px;">Year Level</h3>
+                    <h3 class="text-dark mb-0" style="margin: 10px 0px 0px 0px;font-size: 15px;width: 101px;margin-top: 11px;">First Year</h3><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+                    <h3 class="text-dark mb-0" style="margin: 10px 0px 0px 0px;font-size: 15px;width: 101px;margin-top: 11px;">Second Year</h3><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+                    <h3 class="text-dark mb-0" style="margin: 10px 0px 0px 0px;font-size: 15px;width: 101px;margin-top: 11px;">Third Year</h3><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+                    <h3 class="text-dark mb-0" style="margin: 10px 0px 0px 0px;font-size: 15px;width: 101px;margin-top: 11px;">Fourth Year</h3><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+                    <div class="btn-group" role="group"></div>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons"></div>
+                </div>
+            </div><input class="bg-light border rounded-0 border-dark search form-control" type="text" placeholder="Search by typing here.." style="width: 258px;margin-left: 827px;margin-bottom: 8px;margin-top: -14px;margin-right: 0px;background-color: #ffffff;opacity: 1;">
+            <div>
+                <div id="content" class="content-normal"></div>
+            </div>
+            <div style="width: 1024px;">
+                <ul class="nav nav-tabs nav-justified" style="width: 1086px;">
+                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-12" style="background-color: #5eace4;">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-13" style="background-color: #70d557;">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-16" style="background-color: #dce763;">Journals</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-15" style="background-color: #ed5858;">Magazines</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-14" style="background-color: rgb(202,114,234);">Video Tutorial</a></li>
+                </ul>
+                <div class="tab-content" style="width: 1044px;">
+                    <div class="tab-pane active" role="tabpanel" id="tab-12">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 1075px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-13">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 1075px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Article</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-16">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 1075px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Journal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-15">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 1078px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Magazine</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-14">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 1075px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Video Title</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Video Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;color: rgb(8,9,10);">Sapakan ni Batman</td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><a href="#" style="color: rgb(6,7,9);">www.loremipsum.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="color: rgb(12,13,20);">Sapakan ni Robin</td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><a href="#" style="color: rgb(1,2,3);">www.loremipsum.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="color: rgb(10,11,14);">Bahay ni Tarzan</td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><a href="#" style="color: rgb(5,6,10);">www.loremipsum.com</a></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-6">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-11">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-10">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-9">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-8">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-7">
+                        <p>Tab content.</p>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-4" style="width: 1005px;">
+                        <div class="col-md-12 search-table-col" style="margin: -5px;width: 1024px;padding-right: 0px;padding-left: 0px;"><span class="counter pull-right"></span></div>
+                        <p></p>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-5">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Article</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Journal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-2">
+                        <div class="table-responsive table-bordered table table-hover table-bordered results" style="width: 992px;">
+                            <table class="table table-bordered table-hover">
+                                <thead class="bill-header cs">
+                                    <tr>
+                                        <th id="trs-hd" class="col-lg-1" style="width: 601px;color: rgb(239,210,106);font-size: 18px;">Title Page</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 671px;color: rgb(239,210,106);font-size: 18px;">Author</th>
+                                        <th id="trs-hd" class="col-lg-3" style="width: 556px;color: rgb(239,210,106);font-size: 18px;">Subject</th>
+                                        <th id="trs-hd" class="col-lg-2" style="width: 725px;color: rgb(239,210,106);font-size: 18px;">Cover Magazine</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="warning no-result">
+                                        <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 815px;"><a href="#" style="color: rgb(11,14,24);">Bahala na si Batman</a></td>
+                                        <td class="text-center" style="color: rgb(6,6,10);">Batman</td>
+                                        <td class="text-center" style="color: rgb(8,10,21);">Computer Engineering 3</td>
+                                        <td class="text-center"><img src="assets/img/spongebob.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(2,3,6);">Bahala na si Robin</a></td>
+                                        <td class="text-center" style="color: rgb(15,16,24);">Robin</td>
+                                        <td class="text-center" style="color: rgb(14,15,27);">Microprocessors</td>
+                                        <td class="text-center"><img src="assets/img/patrick.png" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="#" style="color: rgb(10,13,21);">Bahala na si Tarzan</a></td>
+                                        <td class="text-center" style="color: rgb(6,7,14);">Tarzan</td>
+                                        <td class="text-center" style="color: rgb(8,9,18);">Differential Equations</td>
+                                        <td class="text-center"><img src="assets/img/squidward.jpg" style="width: 104px;height: 107px;"></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-3"></div>
+                </div>
+            </div>
+            <ul class="list-inline text-right" style="background-color: #f7f2f2;width: 1078px;">
+                <li class="list-inline-item"><a href="#"> <span class="border rounded-0" style="background-color: #eff3f5;color: rgb(2,5,14);">Previous </span></a></li>
+                <li class="list-inline-item"><a class="active" href="#"> <span class="border rounded-0" style="background-color: #e8eef2;color: rgb(9,12,19);">1 </span></a></li>
+                <li class="list-inline-item"><a href="#"> <span class="border rounded-0" style="background-color: #e0eef8;color: rgb(5,8,19);">2 </span></a></li>
+                <li class="list-inline-item"><a href="#"> <span class="border rounded-0" style="background-color: #f4f6f8;color: rgb(4,6,12);">3</span></a></li>
+                <li class="list-inline-item"><a href="#"> <span class="border rounded-0" style="background-color: #f0f3f5;color: rgb(6,8,16);">Next </span></a></li>
+            </ul>
+        </div>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <div class="footer-basic" style="color: rgb(21,131,241);background-color: rgb(4,2,2);">
+        <footer>
+            <div class="social"><a href="#" style="color: rgb(141,7,203);"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <p class="copyright">This E-Library is exclusive only to BSCpE Students of Polytechnic University of the Philippines</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/Bootstrap-DataTables.js"></script>
+    <script src="assets/js/Bootstrap-Image-Uploader.js"></script>
+    <script src="assets/js/Data-Table-with-Search-Sort-Filter-and-Zoom-using-TableSorter.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Right-Sidebar.js"></script>
+    <script src="assets/js/Table-With-Search.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
