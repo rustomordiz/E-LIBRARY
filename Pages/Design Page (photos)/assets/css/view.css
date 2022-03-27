@@ -1,0 +1,6 @@
+.gallery img{
+    display:block;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
